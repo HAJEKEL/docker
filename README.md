@@ -50,6 +50,8 @@ sudo sh ./get-docker.sh --dry-run
 ### Container Management
 
 - **Run a Container:**
+* The -i flag keeps the standard input (STDIN) open, allowing you to interact with the container. This means that even after starting the container, you can send commands to it. (STDIN) is the the input source of a program and is denoted by filedescriptor (0).
+* The -t flag allocates a pseudo-TTY (a terminal). This provides an interactive terminal session within the container, making it behave more like a typical shell session.
   ```bash
   docker container run -it [image_name]
   ```
