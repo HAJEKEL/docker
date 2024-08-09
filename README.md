@@ -22,7 +22,7 @@ sudo sh ./get-docker.sh --dry-run
   sudo groupadd docker
   sudo usermod -aG docker $USER
   ```
-- Check Docker server status:
+- Check Docker server status. When the output is "enabled" docker starts automatically on system boot. You will not need to start docker manually:
   ```bash
   systemctl is-enabled docker
   ```
