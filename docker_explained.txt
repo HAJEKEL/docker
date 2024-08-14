@@ -1,0 +1,12 @@
+If you want to copy the contents of one drive to antoher you create a disk image. You can flash disk images onto a drive. 
+Original Disk --> Disk Image --> Drive's that need a copy.
+Docker images work similarly, but are layered. 
+Layers example:
+Ubuntu + ROS + Custom ROS
+They will all share ubuntu, the last two share the ROS, and the CUSTOM ROS only shares with itself. 
+Dockerfile:
+Existing docker image + our dockerfile = custom docker image
+Container: 
+Docker image -> run -> docker Container
+Disk image -> flashing -> Disk
+Note here: Running is like flashing. So if you want to use your saved changes you need to use start/stop container. 
